@@ -13,6 +13,7 @@ pipeline {
   stages {
     stage('Init Provider') {
       steps {
+        echo $PATH
         sh 'terraform init'
       }
     }
