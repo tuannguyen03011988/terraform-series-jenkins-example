@@ -1,11 +1,11 @@
 terraform {
   backend "s3" {
-    bucket         = "terraform-series-s3-backend"
+    bucket         = "terraform-series-tuan-s3-backend"
     key            = "terraform-jenkins"
-    region         = "us-west-2"
+    region         = "ap-southeast-1"
     encrypt        = true
-    role_arn       = "arn:aws:iam::<ACCOUNT_ID>:role/Terraform-SeriesS3BackendRole"
-    dynamodb_table = "terraform-series-s3-backend"
+    role_arn       = "arn:aws:iam::462225643921:role/Terraform-Series-TuanS3BackendRole"
+    dynamodb_table = "terraform-series-tuan-s3-backend"
   }
 }
 
@@ -40,3 +40,4 @@ resource "aws_instance" "server" {
 output "public_ip" {
   value = aws_instance.server.public_ip
 }
+
