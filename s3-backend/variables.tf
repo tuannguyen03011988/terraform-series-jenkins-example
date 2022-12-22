@@ -5,7 +5,7 @@ variable "region" {
 
 variable "project" {
   description = "The project namespace to use for unique resource naming"
-  default     = "terraform-series-tuan"
+  default     = "terraform-series-tuan1"
   type        = string
 }
 
