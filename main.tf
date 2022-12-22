@@ -4,7 +4,7 @@ terraform {
     key            = "terraform-jenkins"
     region         = "ap-southeast-1"
     encrypt        = true
-    role_arn       = "arn:aws:iam::462225643921:role/Terraform-Series-TuanS3BackendRole"
+    role_arn       = "arn:aws:iam::462225643921:role/Terraform-Series-Tuan1S3BackendRole"
     dynamodb_table = "terraform-series-tuan-s3-backend"
   }
 }
